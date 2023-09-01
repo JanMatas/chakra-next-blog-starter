@@ -6,6 +6,7 @@ This a simple starter template for Chakra + Next13 + MDX blog.
 * SEO optimized with SSR, Meta and OG tags
 * 100s on Lighthouse Page insights
 * Integrated with Chakra UI and Next13 App router
+* Responsive design based on [Chakra template](https://chakra-templates.dev/blog/blog-article-list)
 
 ## Getting Started
 
@@ -21,3 +22,6 @@ All posts are stored in `/app/posts` directory. You can just create new mdx file
 
 ##  Documentation
 You can start by reading a tutorial at https://www.uprightly.app/blog/fast-blog and then following the commit history to understand how we got into this state
+
+## Production use
+Currently used on [www.uprightly.app](https://www.uprightly.app).
