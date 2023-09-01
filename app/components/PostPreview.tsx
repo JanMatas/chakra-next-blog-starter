@@ -15,9 +15,7 @@ import { IPost, estimateReadTimeMinutes } from "../utils";
 export default function ArticleItem(props: { post: IPost }) {
   const { post } = props;
   return (
-    <WrapItem
-      width={{ base: "100%", sm: "45%", md: "45%", lg: "30%" }}
-    >
+    <WrapItem width={{ base: "100%", sm: "45%", md: "45%", lg: "30%" }}>
       <LinkBox>
         <Box w="100%">
           <Box borderRadius="lg" overflow="hidden">
@@ -25,6 +23,14 @@ export default function ArticleItem(props: { post: IPost }) {
               <Image
                 src={post.image}
                 alt={post.imageAlt}
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+                width={160}
+                height={90}
               />
             </Box>
           </Box>
@@ -39,7 +45,11 @@ export default function ArticleItem(props: { post: IPost }) {
           <Text as="p" fontSize="md" marginTop="2">
             {post.excerpt}
           </Text>
-          <AuthorMeta name={post.author} date={post.publishedAt} readTimeMinutes={estimateReadTimeMinutes(post.content)} />
+          <AuthorMeta
+            name={post.author}
+            date={post.publishedAt}
+            readTimeMinutes={estimateReadTimeMinutes(post.content)}
+          />
         </Box>
       </LinkBox>
     </WrapItem>

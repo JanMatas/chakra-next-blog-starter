@@ -11,7 +11,7 @@ export default function Page() {
   const others = posts.filter((a) => a !== featuredPost);
 
   return (
-    <Container maxW={"6xl"} px="12" my={12}>
+    <Container maxW={"4xl"} px="12" my={12}>
       <Stack alignItems={"center"}>
         <Heading as="h1" fontSize={"5xl"}>
           Chakra + Next13 + MDX blog

@@ -40,6 +40,16 @@ const components: MDXComponents = {
     <Image
       src={props.src as string}
       alt={props.alt as string}
+      width={160}
+      height={90}
+      sizes="100vw"
+      // Make the image display full width
+      style={{
+        width: props.width ? props.width : "100%",
+        height: "auto",
+        borderRadius: "10px",
+        margin: "auto",
+      }}
       mt={10}
     >
       {props.children}
@@ -78,7 +88,19 @@ export default function Post(props: { post: IPost }) {
           readTimeMinutes={estimateReadTimeMinutes(post.content)}
         />
         <Box>
-          <Image
+        <Image
+            priority
+            width={160}
+            height={90}
+            mt={10}
+            mb={10}
+            sizes="100vw"
+            // Make the image display full width
+            style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "10px",
+            }}
             src={post.image}
             alt={post.imageAlt}
           />

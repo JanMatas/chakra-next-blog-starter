@@ -37,7 +37,20 @@ export default function PostFeatured(props: Props) {
             marginTop="5%"
           >
             <Box>
-              <Image borderRadius={'lg'} src={post.image} alt={post.imageAlt} />
+            <Image
+                width={160}
+                height={90}
+                priority
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+                src={post.image}
+                alt={post.imageAlt}
+              />
             </Box>
           </Box>
           {/* Dotted frame for featured post. */}
