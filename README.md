@@ -1,5 +1,7 @@
 # Chakra + Next13 + MDX blog
-This a simple starter template for Chakra + Next13 + MDX blog. 
+This a simple starter template for Chakra + Next13 + MDX blog. Live demo is available [here](https://chakra-next-blog-starter.vercel.app/).
+
+![Blog screenshot](/public/blog.png?raw=True "Blog")
 
 ## Features
 * Posts as `.mdx` directly in the repo with working fast refresh
@@ -21,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 All posts are stored in `/app/posts` directory. You can just create new mdx files there. The code assumes the format of the header stays the same.
 
 ##  Documentation
-You can start by reading a tutorial at https://www.uprightly.app/blog/fast-blog and then following the commit history to understand how we got into this state
+You can start by reading a tutorial at https://www.uprightly.app/blog/fast-blog and then following the commit history to understand how we got into this state.
 
 ## Production use
 Currently used on [www.uprightly.app](https://www.uprightly.app).

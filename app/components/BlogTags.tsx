@@ -13,7 +13,7 @@ export default function BlogTags (props: Props) {
       <HStack spacing={2} marginTop={marginTop}>
         {tags.map((tag) => {
           return (
-            <Tag size="md" variant="solid" colorScheme="teal" key={tag}>
+            <Tag size="md" variant="solid" colorScheme="whatsapp" key={tag}>
               {tag}
             </Tag>
           );

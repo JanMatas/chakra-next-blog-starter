@@ -26,8 +26,9 @@ export default function ArticleItem(props: { post: IPost }) {
                 sizes="100vw"
                 // Make the image display full width
                 style={{
-                  width: "100%",
-                  height: "auto",
+                  height: "150px",
+
+                  width: "auto",
                 }}
                 width={160}
                 height={90}
