@@ -23,6 +23,7 @@
     "gray-matter": "^4.0.3",
     "next": "13.4.19",
     "next-mdx-remote": "^4.4.1",
+    "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"

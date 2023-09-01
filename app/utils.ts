@@ -37,6 +37,11 @@ export function getPosts(): IPost[] {
 
 export function getPost(slug: string): IPost {
   const filename = `${slug}.mdx`;
+
+  if (process.env.VERCEL_ENV === 'development') {
+    require(`./posts/${filename}`);
+  }
+
   const fileContent = fs.readFileSync(path.join(BLOG_DIR, filename), "utf-8");
 
   const parsedArticle = matter(fileContent);
